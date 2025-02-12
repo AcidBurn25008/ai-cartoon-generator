@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Cartoon Video Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        textarea {
+            width: 80%;
+            height: 100px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>AI Cartoon Video Generator</h1>
+    <p>Enter your text script below and generate a cartoon video.</p>
+    <textarea id="scriptInput" placeholder="Enter your script here..."></textarea><br>
+    <button onclick="generateVideo()">Generate Cartoon Video</button>
+    <p id="status"></p>
+
+    <script>
+        function generateVideo() {
+            const script = document.getElementById("scriptInput").value;
+            if (script.trim() === "") {
+                alert("Please enter a script.");
+                return;
+            }
+            document.getElementById("status").innerText = "Processing... (This feature requires AI integration)";
+            
+            // Placeholder for AI API integration
+            setTimeout(() => {
+                document.getElementById("status").innerText = "Feature coming soon!";
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
